@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Courses</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">🏫 Bright Future School</a>
+
+      <button class="menu-btn" id="menu-btn">☰</button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Courses Section -->
+  <section class="courses-section">
+
+    <h2>📚 Available Courses</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button data-grade="all">All</button>
+      <button data-grade="10">Grade 10</button>
+      <button data-grade="11">Grade 11</button>
+    </div>
+
+    <!-- Courses List -->
+    <div id="courses-container"></div>
+
+    <!-- Add Course Form -->
+    <div class="add-course">
+
+      <h3>Add New Course</h3>
+
+      <input type="text" id="course-name" placeholder="Course Name" />
+      <input type="text" id="course-teacher" placeholder="Teacher" />
+      <input type="number" id="course-grade" placeholder="Grade (10/11/12)" />
+      <input type="text" id="course-desc" placeholder="Description" />
+
+      <button id="add-course-btn">Add Course</button>
+
+    </div>
+
+  </section>
+
+  <script src="courses.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo"> 🏫 Bright Future School </a>
+
+        <button class="menu-btn" id="menu-btn">☰</button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Bright Future School</h1>
+
+        <p>
+          Empowering students through quality education, creativity, and
+          lifelong learning.
+        </p>
+
+        <a href="#enrollment" class="hero-btn"> Enroll Now </a>
+      </div>
+    </section>
+    <section id="enrollment" class="enrollment">
+      <div class="form-container">
+        <h2>Student Enrollment</h2>
+
+        <form id="enrollment-form">
+          <div class="input-group">
+            <label for="student-name">Student Name</label>
+            <input
+              type="text"
+              id="student-name"
+              placeholder="Enter student name"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="student-age">Age</label>
+            <input type="number" id="student-age" placeholder="Enter age" />
+          </div>
+
+          <div class="input-group">
+            <label for="student-grade">Grade Level</label>
+            <input
+              type="text"
+              id="student-grade"
+              placeholder="Enter grade level"
+            />
+          </div>
+
+          <button type="submit" class="submit-btn">Enroll Student</button>
+        </form>
+
+        <div id="message"></div>
+
+        <div id="student-summary"></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
